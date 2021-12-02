@@ -1,0 +1,340 @@
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    background: #101010;
+    color: #fff;
+}
+.navbar{
+    background-color: #101010; 
+    /* border-bottom: #868585 1px solid;   */
+}
+.navbar .navbar-nav li{
+    padding-right: 20px; 
+  
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    /* color: #868585; */
+    background-color: #868585;
+    border-radius: 10px;
+    
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* navbar styling ends here */
+
+/* home-section styling start here */
+
+
+
+.home-inner{
+    padding-top: 30px;   
+     
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn{
+    color: #20201f;
+    font-weight: bold;    
+}
+
+.btn:hover{
+    background-color: #20201f;
+    color: #FFFFFF;
+}
+
+#home-section .fab{
+    color: #FFFFFF;   
+}
+
+#home-section .fab:hover{
+    color: #868585;
+}
+
+#home-section h1{
+    font-weight: bolder;
+    font-size: 56px;
+    text-align: start;
+    font-style: sans-serif;
+    padding-top: 70px;
+    color: #FFFFFF;
+}
+
+/* home-section styling end here */
+
+/* about section styling start here */
+
+.about-section{
+    padding-top: 16px;
+    width: 100%;
+    /* height: 100vh;  */
+}
+
+.img-frame{
+    height: 520px;
+    width: 300px;
+    border: 10px solid #20201f;
+    margin: 0 auto;   
+}
+
+.about-section img{
+    height: 450px;
+    width: 300px;
+    border-radius: 0px;
+    opacity: 0.7; 
+    position: relative;
+    bottom: 25px;
+    right: 35px;
+    /* border: 10px #20201f solid; */
+}
+/* about section styling ends here */
+
+/* skills section styling start here */
+.skills-section{
+    padding-top: 16px;
+    width: 100%;
+    /* height: 100vh;  */
+    
+}
+
+.progress-bar{
+    background-color: #20201f;
+    
+}
+/* skills section styling ends here */
+
+/* work section styling start here */
+
+.work-section{
+    padding-top: 70px;
+    width: 100%;
+    /* height: 100vh;  */
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0.7;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  /* .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  } */
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  /* .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  } */
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+/* work section styling ends here */
+
+
+/* contact us section styling start here */
+
+.contact-me{
+  padding-top: 70px;
+  width: 100%;
+  /* height: 100vh;  */
+}
+
+.contact-form input{
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  background-color: #FFFFFF;
+  color:#20201f;
+  border: none;
+  /* opacity: 0.9; */
+}
+
+.contact-form .message-input{
+  width: 100%;
+  height: 100px;
+  padding-left: 20px; 
+}
+
+.contact-form .btn-submit{ 
+  float: right;
+}
+
+/* contact us section styling ends here */
+
+/* footer section styling ends here */
+
+.footer{
+  width: 100%;
+  height: 20vh; 
+  padding-top: 120px;  
+  
+}
+
+.footer-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons{
+  height: 50px;
+  width: 50px;
+  background-color: #20201f;
+  margin-left: 15px;
+  text-align: center;  
+}
+
+.footer-icons .fab{
+  color: #FFFFFF;
+  padding-top: 10px;
+}
+.footer-icons .fab:hover{
+  color: #868585;
+}
+
+/* footer section styling ends here */
+
+
+
+
+
+/* Responsive website Layout start here */
+
+@media (max-width:767px) {
+
+  .home-inner{
+    padding-top: 10px;    
+  }
+
+  #home-section h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: start;
+    font-style: sans-serif;
+    padding-top: 70px;
+    color: #FFFFFF;
+  }
+
+  .btn{
+    margin-top: 30px; 
+  }
+
+  #home-section .fab{
+    margin-top: 20px;   
+  }
+
+
+
+
+
+  .about-section h1{
+    margin-left: 30px;
+  }
+
+  .img-frame {
+    margin-left: 45px;
+  }
+
+  .about-section img{
+      margin-top: 5px;
+  }
+
+  .about-section .lead{
+    margin-top: 20px;
+    /* margin-left: 30px; */
+    display: block;
+  }
+
+  .about-section .about-description{
+    margin-left: 20px;
+  }
+
+
+
+
+  .skills-section {
+    margin-left: 25px;
+  }
+
+
+  .work-section {
+    margin-left: 25px;
+  }
+
+  .contact-me{
+    margin-left: 25px;
+  }
+
+  .footer{
+    margin-left: 25px;
+  }
+
+  
+
+
+
+}
